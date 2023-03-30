@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="roxo_claro">#FFBB86FC</color>
+    <color name="azul">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black1">#050000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E93754</color>
+    <color name="orange">#F54855</color>
+    <color name="orange2">#FFE83754</color>
+    <color name="transparente">#00F54855</color>
+    <color name="roxo">#9101FF</color>
+    <color name="verde_agua">#00C2CB</color>
+    <color name="cinza">#BAB9B9</color>
+    <color name="cinza_sec">#E7E7E7</color>
+</resources>

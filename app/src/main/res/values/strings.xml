@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Aplicativo Conect</string>
+    <string name="Title_bem_vindo">Seja bem vindo ao Conect</string>
+    <string name="objetivo">Nosso objetivo é conectar todas as pessoas em um só lugar. Queremos fazer a diferença</string>
+    <string name="title_agendamentos">Facilite seus agendamentos</string>
+    <string name="desc_agendamentos">Com nosso app, tudo se torna prático. Você faz um agendamento com um unico clique, máximo né</string>
+    <string name="title_negocio">Já possui seu próprio negócio?</string>
+    <string name="desc_negocio">Inscreva-se já em nosso app e cresça seu negócio agora</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="Entrar">Entrar</string>
+    <string name="text_cadastro">Criar uma nova conta</string>
+    <string name="titulo_form_cadastro">Cadastre-se</string>
+    <string name="titulo_form_login">Login</string>
+    <string name="titulo_cadastrar">Cadastrar-se</string>
+    <string name="texto_botao_cadastrar">Cadastrar</string>
+    <string name="texto_botao_entrar">Entrar</string>
+    <string name="texto_botao_deslogar">Deslogar</string>
+    <string name="title_activity_tela_principal">tela_principal</string>
+    <string name="text_categorias">Categorias</string>
+    <string name="populares">Populares</string>
+    <string name="Cabeleireira">Cabeleireiras</string>
+    <string name="Manicure">Manicures</string>
+    <string name="Maquiadoras">Maquiadoras</string>
+    <string name="Barbeiro">Barbearias</string>
+    <string name="ver_mais">Ver mais</string>
+    <string name="title_activity_splash_background">Splash_background</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
