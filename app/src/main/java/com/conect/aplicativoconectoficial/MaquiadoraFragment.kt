@@ -30,9 +30,8 @@ class MaquiadoraFragment: Fragment(R.layout.fragment_maquiadora) {
         super.onViewCreated(view, savedInstanceState)
 
         categoriaAdapter.items = arrayListOf(
-            Categorias(1, "https://www.dlf.pt/dfpng/maxpng/211-2114752_bigotes-png.png", "Rosto", 0xFFB6D048),
-            Categorias(2, "https://www.dlf.pt/dfpng/maxpng/27-273960_shivaji-maharaj-png.png", "Olhos", 0xFFE91D2D),
-            Categorias(3, "https://www.dlf.pt/dfpng/maxpng/511-5117162_barba-png.png", "Completo", 0xFFB6D048),
+            Categorias(1, "https://img3.gratispng.com/dy/15411419fdf2f15365da591c3145c0fd/L0KzQYm3VcI5N6togJH0aYP2gLBuTfJmaaZ5kZ95YYLvf8b5TfFzfJprgdVyYXyweLLwkr1qdqVqfARqdHnyfsS0iPFqeqR5RdpqaYKwg8XCjPUuPZM1e6QAZki6QIrrUsUvQWI9S6U7MUS0RYOAVcIzQGE9TKg6Mz7zfri=/kisspng-beauty-parlour-artificial-hair-integrations-hairst-hair-style-5b0c25f8709d25.9183321415275228084613.png", "Rosto", 0xFFB6D048),
+            Categorias(2, "https://img3.gratispng.com/dy/15411419fdf2f15365da591c3145c0fd/L0KzQYm3VcI5N6togJH0aYP2gLBuTfJmaaZ5kZ95YYLvf8b5TfFzfJprgdVyYXyweLLwkr1qdqVqfARqdHnyfsS0iPFqeqR5RdpqaYKwg8XCjPUuPZM1e6QAZki6QIrrUsUvQWI9S6U7MUS0RYOAVcIzQGE9TKg6Mz7zfri=/kisspng-beauty-parlour-artificial-hair-integrations-hairst-hair-style-5b0c25f8709d25.9183321415275228084613.png", "Olhos", 0xFFE91D2D),
         )
 
         binding = FragmentMaquiadoraBinding.bind(view)

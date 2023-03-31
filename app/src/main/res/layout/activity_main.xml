@@ -7,8 +7,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -45,7 +43,6 @@
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_marginTop="300dp"
         android:id="@+id/add_tab"
         app:tabMode="auto"
         app:tabIndicatorFullWidth="false"
