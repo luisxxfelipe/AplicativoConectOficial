@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/icone_foto"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/ic_perfil"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/botao_pesquisar"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:background="@drawable/barra_pesquisar"
-            android:drawableEnd="@drawable/ic_search"
-            android:hint="Pesquisar"
-            android:inputType="textPersonName"
-            android:padding="12dp"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/icone_foto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/icone_foto"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/icone_foto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_perfil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.appcompat.widget.Toolbar>
+            <EditText
+                android:id="@+id/botao_pesquisar"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/barra_pesquisar"
+                android:drawableEnd="@drawable/ic_search"
+                android:hint="Pesquisar"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/icone_foto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icone_foto"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/add_tab"
-        app:tabMode="auto"
-        app:tabIndicatorFullWidth="false"
-        app:tabIndicatorHeight="1dp"
-        app:tabIndicatorColor="@color/red"
-        app:tabTextColor="#777777"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </com.google.android.material.tabs.TabLayout>
+        </androidx.appcompat.widget.Toolbar>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_page"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/add_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/red"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="1dp"
+            app:tabMode="auto"
+            app:tabTextColor="#777777"/>
 
-    </androidx.viewpager2.widget.ViewPager2>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_page"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

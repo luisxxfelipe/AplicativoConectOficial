@@ -6,7 +6,6 @@ import co.tiagoaguiar.atway.ui.adapter.ATViewHolder
 import com.conect.aplicativoconectoficial.databinding.CategoriaItensBinding
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
-import java.lang.Exception
 
 class CategoriasView(viewGroup: ViewGroup): ATViewHolder<Categorias, CategoriaItensBinding>(
     CategoriaItensBinding::inflate,

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,46 +18,43 @@
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:src="@drawable/imagem_negocios"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             style="@style/ContainerComponents"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo_desenho"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_desenho" />
 
         <EditText
             android:id="@+id/cadastro_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/titulo_cadastrar"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/coda"
             android:layout_gravity="center"
             android:layout_marginTop="250dp"
-            app:layout_constraintStart_toStartOf="@id/logo_desenho"
+            android:fontFamily="@font/coda"
+            android:text="@string/titulo_cadastrar"
+            android:textColor="@color/black"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="@id/logo_desenho"
-            app:layout_constraintTop_toTopOf="@id/logo_desenho"
-            />
+            app:layout_constraintStart_toStartOf="@id/logo_desenho"
+            app:layout_constraintTop_toTopOf="@id/logo_desenho" />
 
         <EditText
             android:id="@+id/cadastro_email"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
+            android:layout_marginTop="90dp"
             android:drawableRight="@drawable/ic_email"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
             android:padding="15dp"
             app:layout_constraintEnd_toEndOf="@id/cadastro_user"
             app:layout_constraintStart_toStartOf="@id/cadastro_user"
             app:layout_constraintTop_toTopOf="@id/cadastro_user"
-            android:maxLines="1"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="90dp"
 
             />
 
@@ -67,47 +62,43 @@
             android:id="@+id/cadastro_senha"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_senha"
             android:drawableRight="@drawable/ic_senha"
+            android:hint="@string/hint_senha"
+            android:inputType="numberPassword"
+            android:maxLines="1"
             android:padding="15dp"
             app:layout_constraintEnd_toEndOf="@id/cadastro_user"
             app:layout_constraintStart_toStartOf="@id/cadastro_user"
-            app:layout_constraintTop_toBottomOf="@id/cadastro_email"
-            android:maxLines="1"
-            android:inputType="numberPassword"
-            />
+            app:layout_constraintTop_toBottomOf="@id/cadastro_email" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/botao_cadastrar"
             style="@style/Button"
             android:text="@string/texto_botao_cadastrar"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cadastro_senha"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cadastro_senha" />
 
         <TextView
             android:id="@+id/text_outros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Outros meios:"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/botao_cadastrar"
             android:layout_marginTop="18dp"
+            android:text="Outros meios:"
             android:textColor="@color/black"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/botao_cadastrar" />
 
         <ImageView
             android:id="@+id/logo_google"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:src="@drawable/logo_google"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_outros"
             android:layout_marginTop="5dp"
-            />
+            android:src="@drawable/logo_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_outros" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

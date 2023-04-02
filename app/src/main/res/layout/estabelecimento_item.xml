@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="2dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_estabelecimentos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/red"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/rounded_estabelecimentos"
+        app:strokeColor="@color/cinza_sec"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/text_estab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="70dp"
+        android:maxLines="2"
+        android:paddingVertical="8dp"
+        android:textAlignment="center"
+        tools:text="Barba Branca" />
+
+</LinearLayout>

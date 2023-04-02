@@ -24,7 +24,10 @@
     <string name="Maquiadoras">Maquiadoras</string>
     <string name="Barbeiro">Barbearias</string>
     <string name="ver_mais">Ver mais</string>
+    <string name="dotted">&#8226;</string>
     <string name="title_activity_splash_background">Splash_background</string>
+    <string name="categoria_estabelecimentos">\u2022 %1$s \u2022 %2$.1f km</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

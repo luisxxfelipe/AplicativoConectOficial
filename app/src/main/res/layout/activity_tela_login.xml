@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,10 +20,9 @@
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:src="@drawable/imagem_negocios"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/view"
@@ -36,16 +35,15 @@
             android:id="@+id/login_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/titulo_form_login"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/coda"
             android:layout_gravity="center"
             android:layout_marginTop="220dp"
-            app:layout_constraintStart_toStartOf="@id/logo_desenho"
+            android:fontFamily="@font/coda"
+            android:text="@string/titulo_form_login"
+            android:textColor="@color/black"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="@id/logo_desenho"
-            app:layout_constraintTop_toTopOf="@id/logo_desenho"
-            />
+            app:layout_constraintStart_toStartOf="@id/logo_desenho"
+            app:layout_constraintTop_toTopOf="@id/logo_desenho" />
 
         <EditText
             android:id="@+id/edit_email"
@@ -62,22 +60,20 @@
         <EditText
             android:id="@+id/edit_senha"
             style="@style/Edit_text"
-            android:hint="@string/hint_senha"
             android:drawableRight="@drawable/ic_senha"
+            android:hint="@string/hint_senha"
             android:inputType="numberPassword"
-            app:layout_constraintStart_toStartOf="@id/login_user"
             app:layout_constraintEnd_toEndOf="@id/login_user"
-            app:layout_constraintTop_toBottomOf="@id/edit_email"
-            />
+            app:layout_constraintStart_toStartOf="@id/login_user"
+            app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/botaoEntrar"
             style="@style/Button"
             android:text="@string/Entrar"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edit_senha"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_senha" />
 
         <ProgressBar
             android:id="@+id/progress_bar"
@@ -85,33 +81,30 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:visibility="invisible"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/botaoEntrar"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/botaoEntrar" />
 
         <TextView
             android:id="@+id/text_outros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Outros meios:"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/botaoEntrar"
             android:layout_marginTop="20dp"
+            android:text="Outros meios:"
             android:textColor="@color/black"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/botaoEntrar" />
 
         <ImageView
             android:id="@+id/logo_google"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:src="@drawable/logo_google"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_outros"
             android:layout_marginTop="12dp"
-            />
+            android:src="@drawable/logo_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_outros" />
 
         <TextView
             android:id="@+id/text_conta"
